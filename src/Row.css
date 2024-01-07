@@ -1,0 +1,35 @@
+.row {
+  display: flex;
+  flex-direction: column;
+}
+.row .title_poster {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-bottom: 0px;
+  font: 1.3em bold;
+}
+
+.row_of_movies {
+  display: flex;
+  margin: 20px 20px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  padding: 20px 30px;
+  background-color: none;
+  margin-top: 0px;
+}
+.row_of_movies::-webkit-scrollbar {
+  display: none;
+}
+.poster {
+  object-fit: contain;
+
+  max-height: 300px;
+  transition: transform 450ms;
+  margin-right: 20px;
+}
+.poster:hover {
+  transform: scale(1.03);
+  box-shadow: rgb(130, 190, 186) 2px 2px 20px;
+}
